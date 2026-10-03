@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FNP Sales Analysis | Shravani Sirsilla</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4c9f38;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 42px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            color: #3f8730;
+            margin-top: 0;
+        }
+
+        .card h3 {
+            color: #444;
+            margin-top: 25px;
+        }
+
+        .dashboard {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .kpi {
+            background-color: #eaf4e7;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .kpi strong {
+            display: block;
+            font-size: 24px;
+            color: #3f8730;
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill {
+            background-color: #eaf4e7;
+            color: #315f28;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .button-container {
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4c9f38;
+            color: white;
+            padding: 12px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #3f8730;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 800px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .kpi-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .kpi-container {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FNP Sales Analysis Dashboard</h1>
+        <p>Sales Performance & Customer Analysis | Microsoft Excel</p>
+    </header>
+
+
+    <div class="container">
+
+        <!-- About Project -->
+        <section class="card">
+            <h2>📊 Project Overview</h2>
+
+            <p>
+                The FNP Sales Analysis Dashboard was developed to provide
+                an interactive view of sales performance and customer
+                purchasing behavior.
+            </p>
+
+            <p>
+                The project transforms raw sales data into meaningful
+                business insights related to revenue performance,
+                customer spending, product demand, seasonal trends,
+                and operational performance.
+            </p>
+        </section>
+
+
+        <!-- Dashboard -->
+        <section class="card">
+            <h2>Dashboard</h2>
+
+            <img
+                src="sales-dashboard.png"
+                alt="FNP Sales Analysis Dashboard showing sales KPIs, revenue analysis, product performance, monthly trends, ordering hours and city-wise analysis"
+                class="dashboard"
+            >
+        </section>
+
+
+        <!-- KPIs -->
+        <section class="card">
+            <h2>Key Performance Indicators</h2>
+
+            <div class="kpi-container">
+
+                <div class="kpi">
+                    <strong>1,000</strong>
+                    Total Orders
+                </div>
+
+                <div class="kpi">
+                    <strong>₹35.21 L</strong>
+                    Total Revenue
+                </div>
+
+                <div class="kpi">
+                    <strong>₹3,520.98</strong>
+                    Average Customer Spend
+                </div>
+
+                <div class="kpi">
+                    <strong>5.53</strong>
+                    Average Delivery Time
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Analysis -->
+        <section class="card">
+            <h2>🔍 Analysis Performed</h2>
+
+            <ul>
+                <li>Revenue by Occasion</li>
+                <li>Revenue by Category</li>
+                <li>Revenue by Month</li>
+                <li>Revenue by Ordering Hour</li>
+                <li>Top 5 Products by Revenue</li>
+                <li>City-wise Order Activity</li>
+                <li>Delivery Performance</li>
+                <li>Customer Spending</li>
+                <li>Order Date Analysis</li>
+                <li>Delivery Date Analysis</li>
+                <li>Occasion-based Analysis</li>
+            </ul>
+        </section>
+
+
+        <!-- Key Insights -->
+        <section class="card">
+            <h2>📈 Key Insights</h2>
+
+            <ul>
+                <li>
+                    Colors was the largest revenue-generating category
+                    in the displayed analysis.
+                </li>
+
+                <li>
+                    Revenue showed noticeable peaks during February
+                    and August.
+                </li>
+
+                <li>
+                    Magnam Set generated the highest revenue among the
+                    displayed Top 5 products.
+                </li>
+
+                <li>
+                    Sales activity was relatively stronger during
+                    evening hours, particularly around 5 PM to 9 PM.
+                </li>
+
+                <li>
+                    Sales performance varied across occasions,
+                    categories, products, months, hours and cities.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Business Relevance -->
+        <section class="card">
+            <h2>💡 Business Relevance</h2>
+
+            <p>
+                The dashboard helps identify important sales patterns
+                across occasions, categories, products, time periods
+                and locations.
+            </p>
+
+            <p>
+                These insights can support sales planning, inventory
+                planning, promotional planning, product management,
+                customer targeting and delivery operations.
+            </p>
+        </section>
+
+
+        <!-- Tools -->
+        <section class="card">
+            <h2>🛠️ Tools & Skills</h2>
+
+            <div class="skills">
+                <span class="skill">Microsoft Excel</span>
+                <span class="skill">Pivot Tables</span>
+                <span class="skill">Pivot Charts</span>
+                <span class="skill">Slicers</span>
+                <span class="skill">Data Analysis</span>
+                <span class="skill">Dashboard Design</span>
+                <span class="skill">Business Reporting</span>
+            </div>
+        </section>
+
+
+        <!-- Project Files -->
+        <section class="card">
+            <h2>📁 Project Files</h2>
+
+            <p>
+                The complete project files are available below.
+            </p>
+
+            <div class="button-container">
+
+                <a
+                    href="FNP_Sales_Analysis_Dashboard.xlsx"
+                    class="button"
+                >
+                    View Excel Dashboard
+                </a>
+
+                <a
+                    href="FNP_Sales_Analysis_Documentation.docx"
+                    class="button"
+                >
+                    View Project Documentation
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- Conclusion -->
+        <section class="card">
+            <h2>Conclusion</h2>
+
+            <p>
+                This project demonstrates how raw transactional sales
+                data can be transformed into an interactive dashboard
+                that provides a clear view of sales performance,
+                customer behavior, product demand and operational trends.
+            </p>
+
+            <p>
+                The dashboard brings multiple business dimensions
+                together in a single interactive decision-support tool.
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Shravani Sirsilla | FNP Sales Analysis Dashboard</p>
+    </footer>
+
+</body>
+</html>
