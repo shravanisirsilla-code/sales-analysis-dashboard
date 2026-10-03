@@ -11,6 +11,8 @@ The project transforms raw transactional data into meaningful business insights 
 - Microsoft Excel
 - Pivot Tables
 - Pivot Charts
+- Power query
+- Power Pivot
 - Slicers
 - Data Analysis
 - Dashboard Design
